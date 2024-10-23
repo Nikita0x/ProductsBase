@@ -1,6 +1,5 @@
 package com.example.productsbase;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -48,7 +47,7 @@ public class NewPageEditor extends AppCompatActivity {
                 String weightOfPack = Objects.requireNonNull(weightOfPackValue.getText()).toString();
                 String weightOfBag = Objects.requireNonNull(weightOfBagValue.getText()).toString();
 
-                PageData newPage = new PageData(title, number, generalWidth, generalLength, generalFold, generalThickness, generalWeightOfFilm, packageOfPackages, amountOfPacks, packagesInPacks, weightOfPack, weightOfBag);
+                Product newPage = new Product(title, number, generalWidth, generalLength, generalFold, generalThickness, generalWeightOfFilm, packageOfPackages, amountOfPacks, packagesInPacks, weightOfPack, weightOfBag);
 
                 Intent intent = new Intent(NewPageEditor.this, MainActivity.class);
                 intent.putExtra("data_key", (CharSequence) newPage);

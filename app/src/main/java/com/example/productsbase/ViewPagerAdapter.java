@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,10 +13,10 @@ import java.util.List;
 
 public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.ViewHolder> {
 
-    private List<PageData> pageDataList; // Список объектов с данными
+    private List<Product> productList; // Список объектов с данными
 
-    public ViewPagerAdapter(List<PageData> pageDataList) {
-        this.pageDataList = pageDataList;
+    public ViewPagerAdapter(List<Product> productList) {
+        this.productList = productList;
     }
 
     @NonNull
@@ -29,13 +28,13 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        PageData data = pageDataList.get(position);
+        Product data = productList.get(position);
         holder.bind(data);
     }
 
     @Override
     public int getItemCount() {
-        return pageDataList.size();
+        return productList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -70,7 +69,7 @@ public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.View
             actionButton = itemView.findViewById(R.id.action_button);
         }
 
-        public void bind(PageData data) {
+        public void bind(Product data) {
             textViewPosition.setText(data.getPosition());
             textViewPositionName.setText(data.getPositionName());
             textViewWidthValue.setText(data.getWidthValue());

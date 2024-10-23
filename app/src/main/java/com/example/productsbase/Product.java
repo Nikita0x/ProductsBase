@@ -2,7 +2,7 @@ package com.example.productsbase;
 
 import android.view.View;
 
-public class PageData {
+public class Product {
     private String position;
     private String positionName;
     private String widthValue;
@@ -17,19 +17,19 @@ public class PageData {
     private String weightOfBagValue;
     private View.OnClickListener onClickListener;
 
-    public PageData(String position,
-                    String positionName,
-                    String widthValue,
-                    String lengthValue,
-                    String generalFoldValue,
-                    String generalThicknessValue,
-                    String generalWeightOfFilmValue,
-                    String packageOfPackagesValue,
-                    String amountOfPacksValue,
-                    String packagesInPacksValue,
-                    String weightOfPackValue,
-                    String weightOfBagValue,
-                    View.OnClickListener onClickListener) {
+    public Product(String position,
+                   String positionName,
+                   String widthValue,
+                   String lengthValue,
+                   String generalFoldValue,
+                   String generalThicknessValue,
+                   String generalWeightOfFilmValue,
+                   String packageOfPackagesValue,
+                   String amountOfPacksValue,
+                   String packagesInPacksValue,
+                   String weightOfPackValue,
+                   String weightOfBagValue,
+                   View.OnClickListener onClickListener) {
         this.position = position;
         this.positionName = positionName;
         this.widthValue = widthValue;
@@ -45,18 +45,18 @@ public class PageData {
         this.onClickListener = onClickListener;
     }
 
-    public PageData(String position,
-                    String positionName,
-                    String widthValue,
-                    String lengthValue,
-                    String generalFoldValue,
-                    String generalThicknessValue,
-                    String generalWeightOfFilmValue,
-                    String packageOfPackagesValue,
-                    String amountOfPacksValue,
-                    String packagesInPacksValue,
-                    String weightOfPackValue,
-                    String weightOfBagValue) {
+    public Product(String position,
+                   String positionName,
+                   String widthValue,
+                   String lengthValue,
+                   String generalFoldValue,
+                   String generalThicknessValue,
+                   String generalWeightOfFilmValue,
+                   String packageOfPackagesValue,
+                   String amountOfPacksValue,
+                   String packagesInPacksValue,
+                   String weightOfPackValue,
+                   String weightOfBagValue) {
         this.position = position;
         this.positionName = positionName;
         this.widthValue = widthValue;
