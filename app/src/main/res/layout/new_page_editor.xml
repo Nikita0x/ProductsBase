@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="НАЗВА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="НОМЕР"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/generalWidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ШИРИНА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/generalWidthValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/generalLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ДОВЖИНА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/generalLengthValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/generalFold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="КАРМАНИ"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/generalFoldValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/generalThickness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ТОВЩИНА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/generalThicknessValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/generalWeightOfFilm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ВАГА ПЛIВКИ"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/generalWeightOfFilmValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/packageOfPackages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ФАСОВКА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/packageOfPackagesValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/amountOfPacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ПАЧОК В МIШКУ"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amountOfPacksValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/packagesInPacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ПАКЕТIВ В ПАЧЦI"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/packagesInPacksValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weightOfPack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ВАГА ПАЧКИ"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weightOfPackValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weightOfBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:text="ВАГА МIШКА"
+                android:textSize="24sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weightOfBagValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                android:hint="ДОДАТИ"
+                android:textColorHint="@color/graytodark"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/gray"
+            android:text="ЗБЕРЕГТИ"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
